@@ -54,5 +54,7 @@ function handleResponse(response) {
          }
          */
         return data;
+    }).catch( (err)=>{
+        console.log('===================');
     });
 }

@@ -9,9 +9,13 @@ import { App } from './App';
 import { configureFakeBackend } from './_helpers';
 configureFakeBackend();
 
+import swDev from './swDev';
+
 render(
     <Provider store={store}>
         <App />
     </Provider>,
     document.getElementById('app')
 );
+
+swDev();
